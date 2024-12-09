@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Nan's Sense Store</title>
+</head>
+<body>
+
+<div class="content-wrapper">
+    <!-- Cart Container -->
+    <center>
+        <div id="cart-container" class="cart-container">
+            <h2>SHOPPING CART</h2>
+            <div id="cart-items"></div>
+            <button class="place-order" onclick="placeOrder()">Place Order</button>
+        </div>
+    </center>
+    <!-- Header Section -->
+    <header>
+        <img src="logo.png" class="logo-custom" alt="Logo" id="logoToggle" />
+        <h1>Nan's Sense Store</h1>
+        <img src="cart.png" class="cart-icon" alt="Cart" onclick="shoppingCart()" />
+    </header>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="#" class="menu-item1" onclick="showHome()">Home</a>
+        <a href="#" class="menu-item2" onclick="fetchProducts()">Products</a>
+        <a href="#" class="menu-item3" onclick="shoppingCart()"> Your Cart</a>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="center-content"></div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <h2>About us</h2>
+        <div class="team-table-container">
+            <table class="team-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>Khalid Nelson C. Aguila</td>
+                    <td>Creator</td>
+                    <td>aguilakhalid18@gmail.com</td>
+                </tr>
+            </table>
+        </div>
+        <p>This project was built for school purposes, especially made by a student beginner of Web Development</p>
+        <p>&copy; 2024 Nan's Sense Store.</p>
+    </footer>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
